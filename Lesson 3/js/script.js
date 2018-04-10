@@ -14,7 +14,7 @@ function start () {
 		
 		time = 7;
 }
-// start ();
+start ();
 let mainList = {
 		budget: money,
 		shopName: name,
@@ -40,7 +40,7 @@ function choosGoods() {
 	}
 }
 
-// choosGoods ();
+choosGoods ();
 
 function workTime (time) {
 
@@ -55,7 +55,7 @@ if (time < 21 && time >= 9) {
 				}
 }
 
-// workTime (14);
+workTime (14);
 
 
 function moneyDay () {
@@ -73,7 +73,7 @@ function discountPrice () {
 		alert ('Ваша цена: ' + price)
 	} 
 }
-// discountPrice ();
+discountPrice ();
 
 
 function employers () {
@@ -84,10 +84,9 @@ function employerWork (number, employerName) {
 
 for (i = 1; i < 5; i++) {
 	let employerName = prompt ("Введите имя сотрудника:"); 
-//  let employer = "employer_" + i;
 	let employer = new employerWork (i, employerName);
 	console.log (employer);
 }
 }
-// employers ();
+employers ();
 console.log(mainList);
