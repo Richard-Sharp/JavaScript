@@ -12,7 +12,7 @@ let mainList = {
 for (let i = 0; i < 3; i++) {
 	let a = prompt('Что будем продавать?');
 
-	if ((typeof(a)) !== 'string' && (typeof(a)) !== null && a !== '' && a.length < 50 ) {
+	if ((typeof(a)) === 'string' && (typeof(a)) != null && a != '' && a.length < 50 ) {
 		console.log("Все верно!");
 		mainList.shopGoods[i] = a;
 	} else {
