@@ -62,15 +62,15 @@ function setTime (id, endtime) {
 		function updateClock () {
 			let t = getTimeRemaining(endtime);
 			if (t.hours < 10) {
-			seconds.innerHTML = '0' + t.hours;
+			hours.innerHTML = '0' + t.hours;
 			} else {
-				seconds.innerHTML = t.hours;
+				hours.innerHTML = t.hours;
 			};
 
 			if (t.minutes < 10) {
-			seconds.innerHTML = '0' + t.minutes;
+			minutes.innerHTML = '0' + t.minutes;
 			} else {
-				seconds.innerHTML = t.minutes;
+				minutes.innerHTML = t.minutes;
 			};
 			
 			if (t.seconds < 10) {
@@ -78,7 +78,7 @@ function setTime (id, endtime) {
 			} else {
 				seconds.innerHTML = t.seconds;
 			};
-			
+
 
 			if (t.total <= 0) {
 				clearInterval(timeInterval);
