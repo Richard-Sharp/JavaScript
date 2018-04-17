@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
 				tabContent[i].classList.remove('show');
 				tabContent[i].classList.add('hide');
 			}
-		};
+		}
 
 	hideTabContent (1);
 
@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			tabContent[b].classList.add('show');
 
 		}
-	};
+	}
 
 	info.addEventListener('click', function (event) {
 		let target = event.target;
@@ -51,7 +51,7 @@ function getTimeRemaining (endtime) {
 		'minutes': minutes,
 		'seconds': seconds
 	};
-};	
+}
 
 function setTime (id, endtime) {
 	let timer = document.getElementById(id),
@@ -65,30 +65,30 @@ function setTime (id, endtime) {
 			hours.innerHTML = '0' + t.hours;
 			} else {
 				hours.innerHTML = t.hours;
-			};
+			}
 
 			if (t.minutes < 10) {
 			minutes.innerHTML = '0' + t.minutes;
 			} else {
 				minutes.innerHTML = t.minutes;
-			};
+			}
 			
 			if (t.seconds < 10) {
 			seconds.innerHTML = '0' + t.seconds;
 			} else {
 				seconds.innerHTML = t.seconds;
-			};
+			}
 
 
 			if (t.total <= 0) {
 				clearInterval(timeInterval);
 			}
-		};
+		}
 
 		updateClock();
 		let timeInterval = setInterval(updateClock, 1000);
 
-};
+}
 
 setTime ('timer', deadLine);
 
@@ -112,24 +112,14 @@ close.addEventListener('click', function () {
 	document.body.style.overflow = '';
 });
 
-// function findTabs () {
-// 	for (i = 0; i < moreTab.length; i++) {
-// 	moreTab[i].addEventListener ('click', function () {
-// 	moreTab[i].classList.add('more-splash');
-// 	overlay.style.display = 'block';
-// 	document.body.style.overflow = 'hidden';
-// });
-// }
-// }
-
 
 function showModalTab (n) {
 	 moreTab[n].addEventListener ('click', function () {
 		moreTab[n].classList.add('more-splash');
 		overlay.style.display = 'block';
 		document.body.style.overflow = 'hidden';
-	})
-};
+	});
+}
 
  for (i = 0; i < moreTab.length; i++) {
  	moreTab[i] = i;
